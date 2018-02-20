@@ -10,15 +10,17 @@ const lukas = new Person('Lukáš', 30);
 
 const instructors = [amelie, lukas];
 
-Database.save(instructors);
+Database.save(instructors, (err) => console.log('We are finally in the future!'));
 
-const loadedInstructors = Database.load();
+console.log('Are we there yet?');
+
+// const loadedInstructors = Database.load();
 
 // const firstPerson = Person.create(loadedInstructors[0].name, loadedInstructors[0].age);
 
-const convertedInstructors = loadedInstructors.map(Person.create);
+// const convertedInstructors = loadedInstructors.map(Person.create);
 
-convertedInstructors[0].sayName();
+// convertedInstructors[0].sayName();
 
 // const firstPerson = Person.create(loadedInstructors[0]);
 
