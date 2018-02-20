@@ -7,4 +7,9 @@ module.exports = class Person {
     sayName() {
         console.log(this.name);
     }
+
+    static create(obj, param2, param3) {
+        console.log('what is here?', param2, param3)
+        return new Person(obj.name, obj.age);
+    }
 };
