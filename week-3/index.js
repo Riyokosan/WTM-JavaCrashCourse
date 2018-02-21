@@ -22,9 +22,10 @@ const readFile = async(filename) => {
     return new Promise((resolve, reject) => {
         fs.readFile(filename, 'utf8', (err, contents) => {
             if (err) return reject(err);
+
             resolve(contents);
         });
-    })
+    });
 };
 
 const files = [1, 2, 3]
