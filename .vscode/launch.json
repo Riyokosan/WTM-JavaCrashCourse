@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/index.js"
+            "program": "${workspaceFolder}/wtmbjs-4/index.js"
         }
     ]
 }
